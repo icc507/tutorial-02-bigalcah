@@ -10,7 +10,7 @@
 #La salida debe ser
 #         ('mundo', 44, 20, 90, 'hola', 'mundo', 44)
 
-t1 = tuple(input("Ingrese la primera tupla: ").split())
-t2 = tuple(input("Ingrese la segunda tupla: ").split())
+t1 = tuple(input().split())
+t2 = tuple(input().split())
 
 print(t2+t1+t2)
