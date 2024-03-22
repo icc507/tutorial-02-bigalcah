@@ -39,7 +39,7 @@ entradaTupla = convertirEnteros(entrada)
 
 arbol = arbolTrinario(entradaTupla[0])
 
-for elemento in entradaTupla:
+for elemento in entradaTupla[1:]:
 	insertaEnArbolTrinario(arbol, elemento)
 
 print(arbol)
