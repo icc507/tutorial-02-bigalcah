@@ -7,5 +7,19 @@
 #         20 90 hola jiji 77
 #La salida debe ser
 #         (77, 'jiji', 'hola', 90, 20)
-t = input()
-print(t)
+
+def convertirEnteros(lista):
+    nuevaLista = []
+    for elemento in lista:
+        try:
+            nuevoElemento = int(elemento)
+        except ValueError:
+            nuevoElemento = elemento
+        nuevaLista.append(nuevoElemento)
+    return tuple(nuevaLista)
+
+t = input().split()
+
+t = convertirEnteros(t)
+
+print(t[::-1])
