@@ -10,7 +10,20 @@
 #La salida debe ser
 #         ('mundo', 44, 20, 90, 'hola', 'mundo', 44)
 
-t1 = tuple(input().split())
-t2 = tuple(input().split())
+def convertirEnteros(lista):
+    nuevaLista = []
+    for elemento in lista:
+        try:
+            nuevoElemento = int(elemento)
+        except ValueError:
+            nuevoElemento = elemento
+        nuevaLista.append(nuevoElemento)
+    return tuple(nuevaLista)
+          
+t1 = input().split()
+t2 = input().split()
+
+t1 = convertirEnteros(t1)
+t2 = convertirEnteros(t2)
 
 print(t2+t1+t2)
